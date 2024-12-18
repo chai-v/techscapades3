@@ -1,0 +1,61 @@
+<div class="container d-flex flex-column">
+    <!-- <iframe class="mx-auto" src="https://docs.google.com/forms/d/e/1FAIpQLSeHks77jPm2-2YTEpXsYDxv7tlFNiWGZ4vQXKFi3qnNkcozMA/viewform?embedded=true"
+        width="640" height="3100">Loading…</iframe> -->
+
+    <form class="card mx-auto my-3 p-5" [formGroup]="formData">
+        <label class="h5">Register for Techscapades Hyderabad</label>
+        <label class="h6" routerLink="/login">Already have an account? Login</label>
+
+        <label class="h6 mt-2">Team Name</label>
+        <input class="mb-2" type="text" formControlName="teamName">
+
+        <label class="h6 mt-2">Captain Name</label>
+        <input class="mb-2" type="text" formControlName="captainName">
+
+        <label class="h6 mt-2">Captain GITAM Reg number</label>
+        <input class="mb-2" type="text" formControlName="captainRegNum">
+
+        <label class="h6 mt-2">Team Captain Contact Number</label>
+        <input class="mb-2" type="text" formControlName="captainContactNum">
+
+        <label class="h6 mt-2">Branch and Department of Team Captain</label>
+        <input class="mb-2" type="text" formControlName="captainBranch">
+
+        <label class="h6 mt-2">Year of study of Team Captain</label>
+        <label><input type="radio" value="1st" formControlName="captainYear"> 1st</label>
+        <label><input type="radio" value="2nd" formControlName="captainYear"> 2nd</label>
+        <label><input type="radio" value="3rd" formControlName="captainYear"> 3rd</label>
+        <label><input type="radio" value="4th" formControlName="captainYear"> 4th</label>
+        <label><input class="mb-2" type="radio" value="5th" formControlName="captainYear"> Other</label>
+
+        <label class="h6 mt-4">Participant 1 details</label>
+
+        <label class="h6 mt-2">Name</label>
+        <input class="mb-2" type="text" formControlName="p1Name">
+
+        <label class="h6 mt-2">GITAM Registration number</label>
+        <input class="mb-2" type="text" formControlName="p1RegNum">
+
+        <label class="h6 mt-4">Participant 2 details</label>
+
+        <label class="h6 mt-2">Name</label>
+        <input class="mb-2" type="text" formControlName="p2Name">
+
+        <label class="h6 mt-2">GITAM Registration number</label>
+        <input class="mb-2" type="text" formControlName="p2RegNum">
+
+        <label class="h6 mt-4">Account details</label>
+
+        <label class="h6 mt-2">Team Captain Gitam Email id</label>
+        <input class="mb-2" type="text" formControlName="captainMailId">
+
+        <label class="h6 mt-2">Password</label>
+        <input class="mb-2" type="text" formControlName="password1">
+
+        <label class="h6 mt-2">Retype Password</label>
+        <input class="mb-2" type="text" formControlName="password2">
+
+        <button class="mt-3" (click)="register()">Register</button>
+    </form>
+
+</div>

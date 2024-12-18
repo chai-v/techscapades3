@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="text-center">
+        <label class="display-2 my-3 me-3">Techscapades 2.0</label>
+        <label class="h3">GITAM Hyderabad</label>
+    </div>
+    <div class="my-4" id="about">
+        <label class="h1">About the event</label>
+        <div class="fs-4">
+            <p>Hey Guys !!</p>
+            <p>Are you ready for a quest by putting your techincal knowledge to the test?</p>
+            <p>Techscapades 2.0 is a Technical Treasure Hunt hosted by GitHub Community GITAM.</p>
+            <p>Each team would have two hours to follow the clues around campus to find the hidden surprise.</p>
+            <p>Each team must consist of three members.</p>
+            <p><b>Event date:</b> 15th December 2023</p>
+            <p><b>Event Timings:</b> 12:00 PM to 2:00 PM</p>
+        </div>
+    </div>
+    <div class="my-4" id="rules">
+        <label class="h1">Rules</label>
+        <ul class="fs-4">
+            <li>Objective of the teams is to solve clues to collect points and unlock the clue to the next step of the
+                hunt.
+                This sets the team through a journey of clues and locations</li>
+            <li>Progression through the hunt will be monitored and must be through questions assigned to individual
+                teams.
+            </li>
+            <li>If a random QR code is scanned which is not related to the path the team is taking, teams will be
+                prompted
+                with an error message and must solve the questions properly to finish the hunt.</li>
+            <li>It is mandatory that each team collects all the clues intended to qualify for a win. Teams finding the
+                treasure without collecting all the clues will be disqualified.</li>
+            <li>
+                Teams must reach the required number of points before reaching the finish line. Any inconsistencies with
+                the
+                score will result in disqualification.
+            </li>
+            <li>First team to reach the treasure and scan the final QR code wins the treasure hunt.</li>
+        </ul>
+    </div>
+    <div class="my-4" id="instructions">
+        <label class="h1">Instructions</label>
+        <ul class="fs-4">
+            <li>Captain of the team has to login using the credentials set up during registration. Teams that have
+                signed up
+                using the google forms must use the captain’s GITAM email as username and captain’s contact number as
+                password.
+            </li>
+            <li>On the dashboard, the top left hand corner displays the team's name and current score. </li>
+            <li>In the middle, a toggle camera button and logout button can be found. Toggle camera button can be used
+                to
+                turn the camera on or off when necessary. </li>
+            <li>All questions will be displayed upon scanning a QR code hidden in all the locations corresponding to the
+                hunt. After scanning the hidden QR code, answer the question to find the next step of the treasure hunt.
+            </li>
+            <li>If accidentally logged out or kicked out due to a network issue, simply log back in and scan the QR code
+                once again to receive the question.</li>
+            <li>After solving the last question of the hunt, teams will be prompted on the completion of the hunt.</li>
+        </ul>
+    </div>
+    <label class="h1 mt-3">Register for the event ?</label>
+    <br>
+    <button class="mb-3" (click)="goToRegisterPage()">Register</button>
+    <br>
+    <label class="h1 mt-3">Already registered ?</label>
+    <br>
+    <button class="mb-3" (click)="goToLoginPage()">Login</button>
+    <br>
+    <div class="my-4" id="contact">
+        <label class="h1">Have some questions ?</label>
+        <br>
+        <button class="mb-2" (click)="openWhatsApp(1)">WhatsApp - Aaditya</button>
+        <br>
+        <button class="mb-3" (click)="openWhatsApp(2)">WhatsApp - Chaitanya</button>
+    </div>
+
+    <section class="my-4" id="gallery">
+        <label class="h1">Check out our photos from Techscapades 1.0!</label>
+        <br>
+        <button class="mb-2" routerLink="gallery">Gallery</button>
+    </section>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center align-items-center h-100">
+    <form class="card p-5" style="width: 400px;" [formGroup]="formData">
+        <label class="h4">Login</label>
+        <label class="h6 mt-3">Accessible only on event day</label>
+        <label class="h6 mt-3">Team Captain Gitam Email id</label>
+        <input class="" type="text" autocomplete="off" formControlName="username">
+        <label class="h6 mt-3">Password</label>
+        <input class="" type="text" autocomplete="off" formControlName="password">
+        <button class="mt-4" (click)="login()">Login</button>
+    </form>
+</div>

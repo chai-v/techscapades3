@@ -1,0 +1,20 @@
+<div class="container position-relative">
+    <div class="display-3">Techscapades 2.0</div>
+    <div class="fs-3">Team - {{team_name}}</div>
+    <div class="fs-3">Total points - {{score}}</div>
+    <div class="fs-3">Next Location - {{loc}}</div>
+    <div class="d-flex justify-content-center mt-4" style="height: 250px;">
+        <zxing-scanner *ngIf="scan" [formats]="allowedFormats" (scanSuccess)="scanSuccessHandler($event)"></zxing-scanner>
+    </div>
+    <div class="d-flex mt-4">
+        <button class="mx-auto" (click)="scan=!scan">Toggle Camera</button>
+    </div>
+    <div class="d-flex mt-4">
+        <button class="mx-auto" (click)="logout()">Logout</button>
+    </div>
+    <div *ngIf="showDialog" class="card d-flex flex-column justify-content-center position-absolute top-50 start-50 translate-middle p-4">
+        <label >{{question}}</label>
+        <input class="m-1" type="text" [(ngModel)]="answer" placeholder="Answer">
+        <button class="m-1" (click)="checkAnswer()">Check Answer</button>
+    </div>
+</div>
