@@ -39,12 +39,12 @@ export class DashboardComponent implements OnInit {
   scanSuccessHandler(data: any) {
     this.scan = false
     if (data.includes('http')) {
-      if (data == 'https://www.youtube.com/watch?v=GPXkjtpGCFI') {
-        window.open('https://www.youtube.com/watch?v=GPXkjtpGCFI', '_blank')
-      } else if (data == 'https://www.youtube.com/watch?v=BbeeuzU5Qc8'){
-        window.open('https://www.youtube.com/watch?v=BbeeuzU5Qc8', "_blank")
+      if (data == 'https://www.youtube.com/watch?v=Wl959QnD3lM') {
+        window.open('https://www.youtube.com/watch?v=Wl959QnD3lM', '_blank')
+      } else if (data == 'https://www.youtube.com/shorts/NyvWVKf-ncc'){
+        window.open('https://www.youtube.com/shorts/NyvWVKf-ncc', "_blank")
       } else {
-        window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')
+        window.open('https://www.youtube.com/watch?v=NhHb9usKy6Q','_blank')
       }
       console.log(data)
       return

@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
+import { Route, Router } from '@angular/router';
+
 
 
 @Component({
@@ -27,7 +29,7 @@ export class RegisterComponent implements OnInit {
     password2: new FormControl('', Validators.required),
   })
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void { }
 
@@ -44,6 +46,7 @@ export class RegisterComponent implements OnInit {
     this.http.post(environment.endpoint + '/register', this.formData.value).subscribe((res: any) => {
       if (res.status) {
         alert('Registered user successfully')
+        this.router.navigate(['/login'])
       } else {
         alert('User already exists')
       }
